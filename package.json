@@ -1,0 +1,22 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "Progressive Web App ",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --watch"
+  },
+  "keywords": [
+    "Progressive",
+    "web",
+    "app"
+  ],
+  "author": "Chetouani Houssam-Eddine",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "webpack": "^3.10.0"
+  }
+}

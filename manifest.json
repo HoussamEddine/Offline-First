@@ -1,0 +1,8 @@
+{
+  "name": "PWA",
+  "theme_color": "#c5ced5",
+  "background_color": "#e4e4e4",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
