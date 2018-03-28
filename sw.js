@@ -1,5 +1,5 @@
 
-var CACH_N = "v1";
+var CACH_N = "v2";
 function onInstall(event) {
   event.waitUntil(
     caches.open(CACH_N).then(function (cache) {
