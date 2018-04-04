@@ -11,7 +11,7 @@ function onInstall(event) {
         "/assets/image.jpg"
       ])
     }).catch(function (err) {
-      console.log(err);
+//       console.log(err);
     })
   );
 }
@@ -19,13 +19,14 @@ function onFetch(event) {
   event.respondWith(
     caches.match(event.request).then(function (resp) {
       return resp || fetch(event.request).then(function (response) {
+        var clone = response.clone();
         caches.open(CACH_N).then(function (cache) {
-          cache.put(event.request, response.clone());
+          cache.put(event.request, clone);
         });
         return response;
       });
     }).catch(function (err) {
-      console.log(err);
+//       console.log(err);
     })
   );
 }
